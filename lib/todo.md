@@ -23,7 +23,7 @@ task_includes("#TODO buy coffee") => true
 task_includes("#todo buy coffee") => true
 task_includes("#TO-DO buy coffee") => false
 task_includes("buy coffee #TODO") => true
-task_includes(nil) => false
+task_includes(nil) => "Please input the list."
 
 # EXAMPLE
 
