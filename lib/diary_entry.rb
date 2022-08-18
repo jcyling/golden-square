@@ -14,6 +14,7 @@ class DiaryEntry2
 
   def count_words
     # Returns the number of words in the contents as an integer
+    @contents.split(" ").length
   end
 
   def reading_time(wpm) # wpm is an integer representing
@@ -31,5 +32,7 @@ class DiaryEntry2
     # If called again, `reading_chunk` should return the next chunk, skipping
     # what has already been read, until the contents is fully read.
     # The next call after that it should restart from the beginning.
+
+    
   end
 end
