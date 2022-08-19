@@ -1,6 +1,8 @@
 class DiaryEntry
-  def initialize
-    # has list of contacts
+  def initialize(title, content)
+    @title = title
+    @content = content
+    fail "Not enough information" if @content.empty? 
   end
 
   def see_contacts
@@ -10,4 +12,5 @@ class DiaryEntry
   def add_contact(contact) # an instance of contact
     # adds contact to the list
   end
+
 end
